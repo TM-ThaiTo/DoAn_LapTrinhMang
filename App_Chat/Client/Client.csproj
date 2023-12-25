@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95B4E67F-E091-4DFF-8D2B-613774390E39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Client.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v23.1.Core, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\Class_Chat\Result_Chat_User.cs" />
+    <Compile Include="App\Class_Chat\Server_Chat_User.cs" />
+    <Compile Include="App\Class_GuiYeuCau\InfoServer.cs" />
+    <Compile Include="App\Class_MaHoa\DateTime_String.cs" />
+    <Compile Include="App\Class_MaHoa\PicToByte.cs" />
+    <Compile Include="App\Class_MaHoa\MD5.cs" />
+    <Compile Include="App\Class_GuiYeuCau\Result.cs" />
+    <Compile Include="App\Class_ThongTinUser\UserInfo.cs" />
+    <Compile Include="View\Form_Chat_User\Chat_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Chat_User\Chat_User.Designer.cs">
+      <DependentUpon>Chat_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_KetBan\DanhSachDen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_KetBan\DanhSachDen.Designer.cs">
+      <DependentUpon>DanhSachDen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_KetBan\KetBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_KetBan\KetBan.Designer.cs">
+      <DependentUpon>KetBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_QuanLyThongTin\QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_QuanLyThongTin\QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Login\SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Login\SendEmail.Designer.cs">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Login\DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Login\DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Form.Designer.cs">
+      <DependentUpon>Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\Form_Chat_User\Chat_User.resx">
+      <DependentUpon>Chat_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_KetBan\DanhSachDen.resx">
+      <DependentUpon>DanhSachDen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_KetBan\KetBan.resx">
+      <DependentUpon>KetBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_QuanLyThongTin\QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_Login\DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Form.resx">
+      <DependentUpon>Menu_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="View\Form_Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Form_Login\SendEmail.resx">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VS_Load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Caro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VS_main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block-user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
