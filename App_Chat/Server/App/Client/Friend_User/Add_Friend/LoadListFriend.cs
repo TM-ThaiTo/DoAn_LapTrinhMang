@@ -1,12 +1,9 @@
 ﻿using Server.App.MaHoa;
 using Server.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.App.Client
 {
@@ -15,7 +12,7 @@ namespace Server.App.Client
         public void Load_List_Friend(App_Chat_DB context, Socket clientSocket, int id)
         {
             var friendUserIDs = context.FriendLists
-            .Where(su => (su.Status == "Friend" && su.Status != "Block" && (su.UserID1 == id || su.UserID2 == id)))
+            .Where(su => (su.Status == "Friend" && su.Status != "Block" && su.Status != "Pending" && (su.UserID1 == id || su.UserID2 == id)))
             .SelectMany(su => new[] { su.UserID1, su.UserID2 })
             .Distinct()
             .ToList();
@@ -29,9 +26,9 @@ namespace Server.App.Client
                 return;
             }
 
-            // Lấy thông tin người dùng từ bảng User_Details
             var tt_user = context.User_Details
                 .Where(tt => friendUserIDs.Contains(tt.UserID))
+            // Lấy thông tin người dùng từ bảng User_Details
                 .ToList();
 
             // Khởi tạo List<string> để chứa thông tin người dùng

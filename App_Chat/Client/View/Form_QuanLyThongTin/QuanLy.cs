@@ -3,16 +3,8 @@ using Client.App.Class_MaHoa;
 using Client.App.Class_ThongTinUser;
 using Client.App.MaHoa;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Client
@@ -46,9 +38,8 @@ namespace Client
             string dateString = UserInfo.Instance.Age;
             dtp_Age.Value = DateTime_String.String_To_Date(dateString);
 
-
             string userAddress = UserInfo.Instance.Address;
-            txt_Address.Text = userAddress != null ? userAddress : string.Empty;
+            txt_Address.Text = userAddress ?? string.Empty;
         }
         private void thongTin_ReadOnly_true() // hàm mở readonly
         {
@@ -113,7 +104,6 @@ namespace Client
             }
             return true;
         }
-
         private void dienThongTinForm()
         {
             name_form = txt_TenHienThi.Text;
@@ -212,28 +202,20 @@ namespace Client
         }
         #endregion
 
-        #region Cấu hình Form
-        public QuanLy()
-        {
-            InitializeComponent();
-        }
-        private void QuanLyThongTin_User_Load(object sender, EventArgs e)
+        #region Hàm quản lý form
+        private void thongTin()
         {
             hienThi_ThongTin();
             thongTin_ReadOnly_true();
         }
-        private void btn_ChonAnh_Click(object sender, EventArgs e)
-        {
-            AddImage();
-        }
-        private void btn_SuaThongTin_Click(object sender, EventArgs e)
+        private void suaThongTin()
         {
             thongTin_ReadOnly_false();
             btn_LuuThongTin.Enabled = true;
         }
-        private void btn_LuuThongTin_Click(object sender, EventArgs e)
+        private void luuThongTin()
         {
-            if(kiemTraNhap() == false)
+            if (kiemTraNhap() == false)
             {
                 return;
             }
@@ -244,8 +226,29 @@ namespace Client
                 btn_LuuThongTin.Enabled = false;
             }
         }
-
         #endregion
 
+        #region Cấu hình Form
+        public QuanLy()
+        {
+            InitializeComponent();
+        }
+        private void QuanLyThongTin_User_Load(object sender, EventArgs e)
+        {
+            thongTin();
+        }
+        private void btn_ChonAnh_Click(object sender, EventArgs e)
+        {
+            AddImage();
+        }
+        private void btn_SuaThongTin_Click(object sender, EventArgs e)
+        {
+            suaThongTin();
+        }
+        private void btn_LuuThongTin_Click(object sender, EventArgs e)
+        {
+            luuThongTin();
+        }
+        #endregion
     }
 }

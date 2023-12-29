@@ -933,3 +933,179 @@ E:\GitHub\123\k_17\App_Chat\Server\obj\Debug\Server.csproj.CoreCompileInputs.cac
 E:\GitHub\123\k_17\App_Chat\Server\obj\Debug\Server.csproj.CopyComplete
 E:\GitHub\123\k_17\App_Chat\Server\obj\Debug\Server.exe
 E:\GitHub\123\k_17\App_Chat\Server\obj\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\Server.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\DevExpress.Xpo.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.ClientProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.AdminProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.FormMain.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\Server.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\EntityFramework.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\EntityFramework.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.ClientProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.AdminProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.FormMain.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Server\obj\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.ClientProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.AdminProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.FormMain.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\Server.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\EntityFramework.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\EntityFramework.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Server\obj\Debug\Server.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.ClientProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.AdminProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.FormMain.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\Server.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.ClientProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.AdminProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.FormMain.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.ClientProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.AdminProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.FormMain.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.ClientProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.AdminProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.FormMain.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\Server.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.ClientProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.AdminProfile.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.FormMain.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.pdb

@@ -2,13 +2,6 @@
 using Client.App.Class_ThongTinUser;
 using Client.App.MaHoa;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Client
@@ -33,22 +26,7 @@ namespace Client
                 Fill_User(ketQua);
                 return;
             }
-            else if (ketQua == "[Pending]")
-            {
-                MessageBox.Show("Đã gửi yêu cầu kết bạn!!");
-            }
-            else if (ketQua == "[Accept]")
-            {
-                MessageBox.Show("Đã chấp nhận kết bạn!!");
-            }
-            else if (ketQua == "[Done_Friend]")
-            {
-                MessageBox.Show("Hai người dùng đã là bạn bè!!");
-            }
-            else if (ketQua == "[Block_Friend]")
-            {
-                MessageBox.Show("Bạn đã chặn người dùng hoặc đã bị người dùng chặn không thể kết bạn!!");
-            }
+            
             else
             {
                 return;
@@ -57,13 +35,43 @@ namespace Client
         private void Fill_User(string ketQua) // fill kết quả từ server lên datagirdView
         {
             string[] parts = ketQua.Split('$');
-            // Thêm dữ liệu từ các phần tách được vào DataTable
-            for (int i = 1; i < parts.Length; i += 2)
+            string trangThai = parts[0];
+            if(trangThai == "[OK_Load_ListUser]")
             {
-                string id = parts[i];
-                string hoTen = parts[i + 1].GiaiMa();
+                // Thêm dữ liệu từ các phần tách được vào DataTable
+                for (int i = 1; i < parts.Length; i += 2)
+                {
+                    string id = parts[i];
+                    string hoTen = parts[i + 1].GiaiMa();
 
-                dgv_DanhSachNguoiDung.Rows.Add(id, hoTen);
+                    dgv_DanhSachNguoiDung.Rows.Add(id, hoTen);
+                }
+                return;
+            }
+            if(ketQua == "[Done_Block_User]")
+            {
+                MessageBox.Show("Đã chặn người dùng");
+            }
+
+            if (ketQua == "[Pending]")
+            {
+                MessageBox.Show("Đã gửi yêu cầu kết bạn!!");
+                return;
+            }
+            if (ketQua == "[Accept]")
+            {
+                MessageBox.Show("Đã chấp nhận kết bạn!!");
+                return;
+            }
+            if (ketQua == "[Done_Friend]")
+            {
+                MessageBox.Show("Hai người dùng đã là bạn bè!!");
+                return;
+            }
+            if (ketQua == "[Block_Friend]")
+            {
+                MessageBox.Show("Bạn đã chặn người dùng hoặc đã bị người dùng chặn không thể kết bạn!!");
+                return;
             }
         }
         private void dgv_DanhSachNguoiDung_SelectionChanged(object sender, EventArgs e)
@@ -96,16 +104,10 @@ namespace Client
             }
             return true;
         }
-        
         #endregion
 
-        #region Cấu hình form
-        public KetBan()
-        {
-            InitializeComponent();
-        }
-
-        private void btn_KetBan_Click(object sender, EventArgs e)
+        #region Hàm của form
+        private void bketBan()
         {
             if (kiemTraThongTin() == false)
             {
@@ -115,8 +117,7 @@ namespace Client
             string ketQua = Result.Instance.Request(yeuCau);
             LocKetQua(ketQua);
         }
-
-        private void btn_Chan_Click(object sender, EventArgs e)
+        private void chan()
         {
             if (kiemTraThongTin() == false)
             {
@@ -134,15 +135,32 @@ namespace Client
                 return;
             }
         }
-
-        private void KetBan_Load(object sender, EventArgs e)
+        private void load_DanhSachUser()
         {
             // [Load_User]$id
             string yeuCau = $"[Load_User]${UserInfo.Instance.Id}";
             string ketQua = Result.Instance.Request(yeuCau);
             LocKetQua(ketQua);
         }
-    }
-    #endregion
+        #endregion
 
+        #region Cấu hình form
+        public KetBan()
+        {
+            InitializeComponent();
+        }
+        private void btn_KetBan_Click(object sender, EventArgs e)
+        {
+            bketBan();
+        }
+        private void btn_Chan_Click(object sender, EventArgs e)
+        {
+            chan();
+        }
+        private void KetBan_Load(object sender, EventArgs e)
+        {
+            load_DanhSachUser();
+        }
+        #endregion
+    }
 }

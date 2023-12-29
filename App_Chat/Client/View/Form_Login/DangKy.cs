@@ -2,7 +2,6 @@
 using Client.App;
 using System;
 using System.Windows.Forms;
-using DevExpress.XtraEditors.Filtering.Templates;
 using Client.App.Class_MaHoa;
 
 namespace Client
@@ -90,6 +89,15 @@ namespace Client
                 MessageBox.Show("Tài khoản bị trùng vui lòng lấy tài khoản khác", "Thông báo", MessageBoxButtons.OK);
             }
         }
+        private void dangKi()
+        {
+            dienThongTin();
+            if (kiemTraNhap())
+            {
+                guiYeuCau();
+            }
+
+        }
         #endregion
 
         #region Form
@@ -99,11 +107,7 @@ namespace Client
         }
         private void btn_DangKi_Click(object sender, EventArgs e)
         {
-            dienThongTin();
-            if (kiemTraNhap())
-            {
-                guiYeuCau();
-            }
+            dangKi();
         }
         #endregion
     }

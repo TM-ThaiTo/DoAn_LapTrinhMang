@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace Client.App.Class_ThongTinUser
+﻿namespace Client.App.Class_ThongTinUser
 {
     public class UserInfo
     {

@@ -1,11 +1,4 @@
-﻿using Client.App.Class_ThongTinUser;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Client.App.Class_GuiYeuCau
+﻿namespace Client.App.Class_GuiYeuCau
 {
     public class InfoServer
     {

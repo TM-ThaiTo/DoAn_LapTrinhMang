@@ -1,14 +1,7 @@
 ﻿using Client.App;
 using Client.App.Class_ThongTinUser;
 using Client.App.MaHoa;
-using DevExpress.XtraBars.Docking2010.Views.WindowsUI;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,7 +12,7 @@ namespace Client
     {
         #region Biến
         string id_BanBe;
-        string HoTen_BanBe;
+        string Name_BanBe;
 
         private CancellationTokenSource cancellationTokenSource;
 
@@ -98,7 +91,7 @@ namespace Client
                 DataGridViewRow selectedRow = dgv_DanhSachBanBe.SelectedRows[0];
 
                 id_BanBe = selectedRow.Cells[0].Value.ToString();
-                HoTen_BanBe = selectedRow.Cells[1].Value.ToString();
+                Name_BanBe = selectedRow.Cells[1].Value.ToString();
             }
             else
             {
@@ -156,8 +149,18 @@ namespace Client
         }
         private void btn_Chat_Click(object sender, EventArgs e)
         {
-            Chat_User cu = new Chat_User(UserInfo.Instance.Id, UserInfo.Instance.Name, id_BanBe, HoTen_BanBe);
-            cu.Show();
+            /*Chat_User cu = new Chat_User(id_BanBe, HoTen_BanBe);
+            cu.Show();*/
+            if (id_BanBe != null && Name_BanBe != null)
+            {
+                FormChat fm = new FormChat(id_BanBe, Name_BanBe);
+                fm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn bạn bè để chat!!", "Thông báo", MessageBoxButtons.OK);
+            }
+            
         }
         private void btn_DangXuat_Click(object sender, EventArgs e)
         {
@@ -168,6 +171,5 @@ namespace Client
             close_Form();
         }
         #endregion
-
     }
 }

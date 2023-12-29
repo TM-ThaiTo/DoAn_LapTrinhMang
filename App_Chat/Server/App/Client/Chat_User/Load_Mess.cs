@@ -24,7 +24,6 @@ namespace Server.App.Client.Chat_User
                 return "[NULL TIMESTAMP]";
             }
         }
-
         public void Load_Mess_User(App_Chat_DB context, Socket clientSocket, int id1, int id2)
         {
             var messages = context.Messages
@@ -43,6 +42,16 @@ namespace Server.App.Client.Chat_User
                 mangMess_vaDateTime.Add(messInfo);
             }
 
+            // Kiểm tra xem có tin nhắn hay không
+            if (mangMess_vaDateTime.Count == 0)
+            {
+                string tl = $"[NULL]";
+
+                // Sử dụng clientSocket để gửi phản hồi về client
+                clientSocket.Send(Encoding.UTF8.GetBytes(tl));
+                return;
+            }
+
             string title = "[OK]";
             string noidung = title + string.Join("", mangMess_vaDateTime);
 
@@ -52,6 +61,5 @@ namespace Server.App.Client.Chat_User
             // Sử dụng clientSocket để gửi phản hồi về client
             clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
         }
-
     }
 }

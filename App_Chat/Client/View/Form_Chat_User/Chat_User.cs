@@ -1,232 +1,216 @@
 ﻿using Client.App.Class_ThongTinUser;
 using Client.App;
 using System;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Sockets;
-using System.Net;
 using Client.App.MaHoa;
-using Client.App.Class_Chat;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Threading;
-using DevExpress.XtraPrinting.Preview;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using Client.App.Class_GuiYeuCau;
 
 namespace Client
 {
     public partial class Chat_User : Form
     {
-        #region Biến
-        string id_Chu;
-        string hoTen_Chu;
-        string id_BanBe;
-        string hoTen_BanBe;
+        private string id_Gui;
+        private string hoTen_Gui;
+        private string id_Nhan;
+        private string name_Nhan;
 
-
-        string IP_ChuPhong;
-        int port_ChuPhong;
-
-
-        private CancellationTokenSource cancellationTokenSource;
-        #endregion
-
-        #region Hàm xữ lý test
-        /*private void hamLayIPvaPort()
-        {
-            try
-            {
-                // Lấy địa chỉ IP của máy
-                string hostName = Dns.GetHostName();
-                IPHostEntry hostEntry = Dns.GetHostEntry(hostName);
-
-                // Chọn địa chỉ IPv4 đầu tiên, nếu có
-                IPAddress ipAddress = hostEntry.AddressList.FirstOrDefault(ip => ip.AddressFamily == AddressFamily.InterNetwork);
-
-                if (ipAddress == null)
-                {
-                    MessageBox.Show("Không tìm thấy địa chỉ IPv4.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                // Lấy thông tin cổng đang được sử dụng
-                TcpListener tcpListener = new TcpListener(ipAddress, 0); // 0 để chọn một cổng trống tự động
-                tcpListener.Start();
-
-                int port = ((IPEndPoint)tcpListener.LocalEndpoint).Port;
-                
-                // Đóng cổng sau khi đã lấy thông tin
-                tcpListener.Stop();
-                
-                // Lưu vào biến
-                IP_ChuPhong = ipAddress.ToString();
-                port_ChuPhong = port;
-
-                // Hiển thị thông tin hoặc sử dụng ip và port trong ứng dụng của bạn
-                MessageBox.Show($"IP Address: {IP_ChuPhong}\nPort: {port}", "Thông tin IP và Port", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void guiYeuCau_DenServerChinh(string id)
-        {
-            hamLayIPvaPort();
-            //[Tao_Chat_User]$id1$IP$port$id2
-            string yeuCau = $"[Tao_Chat_User]${UserInfo.Instance.Id}${IP_ChuPhong.MaHoa()}${port_ChuPhong.ToString()}${id}";
-            string ketQua = Result.Instance.Request(yeuCau);
-            XuLyKetQua(ketQua);
-        }
-        private void XuLyKetQua(string ketQua) // xử lý kết quả trả về từ server
-        {
-            // Tách lấy phần yêu cầu từ nội dung
-            string[] parts = ketQua.Split('$');
-            string yeuCau = parts[0];
-            if (string.IsNullOrEmpty(ketQua))
-            {
-                return;
-            }
-            else if (yeuCau == "[OK]")
-            {
-                //Start_Sever_Chat();
-                //load_Form(hoTen_BanBe);
-                return;
-            }
-            else if(yeuCau != "[OK_1]")
-            {
-                //string noidung = $"[OK_1]${ip}${port}";
-                string ip = parts[1];
-                int port = int.Parse(parts[2]);
-                //load_Form(hoTen_BanBe);
-            }
-            else
-            {
-                return;
-            }
-        }
-        private async void Start_Sever_Chat()
-        {
-            try
-            {
-                Server_Chat_User sv = new Server_Chat_User();
-                await Task.Run(() =>
-                {
-                    sv.Start(IP_ChuPhong, port_ChuPhong);
-                });
-            } catch { }
-        }*/
-        #endregion
-
-        #region Hàm xữ lý
-        private void load_Form(string hoTen)
-        {
-            lbl_TenNguoiNhan.Text = hoTen;
-        }
+        private Socket serverSocket;
+        private Thread listenThread;
+        private bool isServerStart;
         
-        // xữ lý Send mess
+        private TcpClient client;
+        public Chat_User(string id_ngNhan, string name_ngNhan)
+        {
+            InitializeComponent();
+            id_Gui = UserInfo.Instance.Id;
+            hoTen_Gui = UserInfo.Instance.Name;
+            id_Nhan = id_ngNhan;
+            name_Nhan = name_ngNhan;
+        }
+
+        private void Chat_User_Load(object sender, EventArgs e)
+        {
+            lbl_TenNguoiNhan.Text = name_Nhan;
+            Connect();
+            //Load_Mess();
+            //StartListeningForMessages();
+        }
+
+        private void Load_Mess()
+        {
+            string noiDung = $"[Load_Mess_ChatUser]${id_Gui}${id_Nhan}";
+            string ketQua = Result.Instance.Request(noiDung);
+
+            if (!string.IsNullOrEmpty(ketQua) && !ketQua.Equals("[NULL]"))
+            {
+                LoadandAdd_ListMess(ketQua);
+            }
+        }
+
+        private void LoadandAdd_ListMess(string ketQua)
+        {
+            lsv_Message.Items.Clear();
+            string[] parts = ketQua.Split('$');
+
+            for (int i = 1; i < parts.Length - 1; i += 4)
+            {
+                string idGui = parts[i];
+                string idNhan = parts[i + 1];
+                string mess = parts[i + 2].GiaiMa();
+                string date = parts[i + 3];
+
+                // Kiểm tra cả hai điều kiện trong cùng một lệnh if
+                if (idGui == id_Gui)
+                {
+                    lsv_Message.Items.Add($"{hoTen_Gui}: {mess}");
+                }
+                else if (idGui == idNhan)
+                {
+                    lsv_Message.Items.Add($"{name_Nhan}: {mess}");
+                }
+            }
+        }
+
         private void Send_Mess()
         {
-            // gửi: [New_Mess_ChatUser]$id1$id2$mess
-            // id1 == id_Chu, id2 == id2_BanBe
-            // mess == txt_Mess
             string mess = txt_Mess.Text;
-            
+
             if (string.IsNullOrEmpty(mess))
             {
                 return;
             }
 
-            // id_Chu là id người gửi id_BanBe id nhận
-            // $"[New_Mess_ChatUser]$id1$id2$mess
-            string noiDung = $"[New_Mess_ChatUser]${id_Chu}${id_BanBe}${mess.MaHoa()}";
+            lsv_Message.Items.Add($"{hoTen_Gui}: {mess}");
 
+            string noiDung = $"[New_Mess_ChatUser]${id_Gui}${id_Nhan}${mess.MaHoa()}";
             string ketQua = Result.Instance.Request(noiDung);
-            if(ketQua == "[OK]")
-            {
-                Load_Mess();
-            }
-            //XuLyKetQua_NewMess(ketQua, mess);
-        }
 
-        private void LoadandAdd_ListMess(string ketQua)
-        {
-            lsv_Message.Items.Clear(); // Xóa tất cả các mục trong ListView
-
-            string[] parts = ketQua.Split('$');
-            // Thêm dữ liệu từ các phần tách được vào ListView
-            for (int i = 1; i < parts.Length - 1; i += 4) // Bắt đầu từ 1 và tăng 4 để lấy giá trị mess
+            if (ketQua == "[OK]")
             {
-                string idGui = parts[i];
-                string idNhan = parts[i + 1];
-                if(idGui == id_Chu)
-                {
-                    string mess = parts[i + 2].GiaiMa();
-                    string date = parts[i + 3];
-                    lsv_Message.Items.Add(hoTen_Chu + ":" + mess);
-                }
-                else if(idGui == id_BanBe)
-                {
-                    string mess = parts[i + 2].GiaiMa();
-                    string date = parts[i + 3];
-                    lsv_Message.Items.Add(hoTen_BanBe + ":" + mess);
-                }
+                MessageBox.Show("Gửi tin nhắn thành công!!");
             }
         }
-        // xữ lý load mess
-        private void Load_Mess()
+
+        
+        private async void StartListeningForMessages()
         {
-            string noiDung = $"[Load_Mess_ChatUser]${id_Chu}${id_BanBe}";
-            string ketQua = Result.Instance.Request(noiDung);
-            LoadandAdd_ListMess(ketQua);
-        }
-        #endregion
-
-        #region Hàm của form
-        public Chat_User(string id1, string hoTenChu, string id2, string hoTen_Khach)
-        {
-            InitializeComponent();
-            id_Chu = id1;
-            hoTen_Chu = hoTenChu;
-            id_BanBe = id2;
-            hoTen_BanBe = hoTen_Khach;
-        }
-        private async void Chat_User_Load(object sender, EventArgs e)
-        {
-            load_Form(hoTen_BanBe);
-
-            string lastMessages = string.Empty;
-
-            cancellationTokenSource = new CancellationTokenSource();
-
-            await Task.Run(async () =>
+            try
             {
-                while (!cancellationTokenSource.Token.IsCancellationRequested)
+                isServerStart = true;
+                await Task.Run(() =>
                 {
-                    string noiDung = $"[Load_Mess_ChatUser]${id_Chu}${id_BanBe}";
-                    string ketQua = Result.Instance.Request(noiDung);
-
-                    if (ketQua != lastMessages) // Kiểm tra xem dữ liệu mới có khác so với dữ liệu hiện tại không
+                    while (isServerStart)
                     {
-                        LoadandAdd_ListMess(ketQua);
-                        lastMessages = ketQua; // Cập nhật dữ liệu hiện tại
-                    }
+                        byte[] buffer = new byte[1024];
+                        int bytesRead = serverSocket.Receive(buffer);
 
-                    // Sử dụng Task.Delay thay vì Thread.Sleep để tránh đóng băng luồng
-                    await Task.Delay(2000);
-                }
-            });
+                        if (bytesRead > 0)
+                        {
+                            string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                            ProcessReceivedMessage(receivedMessage);
+                            MessageBox.Show(receivedMessage);
+                        }
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error receiving message: {ex.Message}", "Error");
+            }
         }
+
+        private void ProcessReceivedMessage(string receivedMessage)
+        {
+            Invoke(new Action(() =>
+            {
+                lsv_Message.Items.Add(receivedMessage);
+            }));
+        }
+
         private void btn_Send_Click(object sender, EventArgs e)
         {
-            Send_Mess();
+            //Send_Mess();
+            Send();
         }
+
         private void Chat_User_FormClosing(object sender, FormClosingEventArgs e)
         {
-            cancellationTokenSource?.Cancel(); // Hủy bỏ vòng lặp khi form đóng
+            isServerStart = false;
+        }
+
+        #region 
+        private void Connect()
+        {
+            client = new TcpClient();
+            try
+            {
+                client.Connect(InfoServer.Instance.ServerIP, 9999);
+                Thread receiveThread = new Thread(Receive);
+                receiveThread.IsBackground = true;
+                receiveThread.Start();
+            }
+            catch
+            {
+                MessageBox.Show("Không thể kết nổi serve!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+        // hàm nhận thông tin từ server
+        private void Receive()
+        {
+            try
+            {
+                while (true)
+                {
+                    byte[] data = new byte[1024 * 5000];
+                    client.GetStream().Read(data, 0, data.Length);
+
+                    string message = (string)Deserialize(data);
+                    MessageBox.Show(message);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                CloseClient();
+            }
+        }
+        private void Send()
+        {
+            if (txt_Mess.Text != string.Empty)
+            {
+                byte[] data = Serialize(txt_Mess.Text);
+                client.GetStream().Write(data, 0, data.Length);
+            }
+        }
+
+        // hàm đóng client
+        private void CloseClient()
+        {
+            client.Close();
+        }
+        // hàm chuyển dữ liệu thành bit
+        private byte[] Serialize(object obj)
+        {
+            MemoryStream stream = new MemoryStream();
+            BinaryFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(stream, obj);
+            return stream.ToArray();
+        }
+
+        // hàm chuyển bit thành dữ liệu
+        private object Deserialize(byte[] data)
+        {
+            MemoryStream stream = new MemoryStream(data);
+            BinaryFormatter formatter = new BinaryFormatter();
+            return formatter.Deserialize(stream);
         }
         #endregion
-
-
     }
 }

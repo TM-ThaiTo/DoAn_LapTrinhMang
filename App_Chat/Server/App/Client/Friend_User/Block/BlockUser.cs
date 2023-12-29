@@ -30,7 +30,7 @@ namespace Server.App.Client.Friend_User
                 context.FriendLists.Add(fr);
                 context.SaveChanges();
 
-                string noidung = "[OK]";
+                string noidung = "[Done_Block_User]";
                 
                 // Gửi phản hồi về client cùng với địa chỉ IP
                 string traloi = $"{noidung}";

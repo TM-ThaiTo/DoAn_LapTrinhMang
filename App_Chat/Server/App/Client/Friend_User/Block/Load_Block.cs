@@ -4,9 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.App.Client.Friend_User.Block
 {
@@ -29,7 +27,7 @@ namespace Server.App.Client.Friend_User.Block
             List<string> mangThongTinNguoiDung = new List<string>();
 
             // Sử dụng vòng lặp foreach để duyệt qua danh sách người dùng và gộp thông tin vào List
-            string title = "[OK]";
+            string title = "[OK_LoadListBlock]";
             foreach (var nguoiDung in tt_user)
             {
                 mangThongTinNguoiDung.Add($"${nguoiDung.UserID}${nguoiDung.FullName.MaHoa()}");

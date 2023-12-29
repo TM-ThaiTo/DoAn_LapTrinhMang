@@ -67,6 +67,7 @@
     <Compile Include="App\Client\Friend_User\Add_Friend\MakeFriend.cs" />
     <Compile Include="App\Client\Info_User\UpdateInfor_User.cs" />
     <Compile Include="App\Client\Load _User\Load_User.cs" />
+    <Compile Include="App\Client\TTKetNoi_User\ThongTinKetNoi.cs" />
     <Compile Include="App\MaHoa\DateTime_To_String.cs" />
     <Compile Include="App\MaHoa\PicToByte.cs" />
     <Compile Include="View\ClientProfile.cs">

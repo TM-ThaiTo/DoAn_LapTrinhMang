@@ -7,6 +7,7 @@ namespace Server.App.Client.Friend_User
 {
     public class MakeFriend
     {
+        // hàm gửi lời mời kết bạn
         private int LayMaxID(App_Chat_DB context)
         {
             // Sử dụng LINQ để truy vấn cơ sở dữ liệu và lấy ID lớn nhất
@@ -14,30 +15,7 @@ namespace Server.App.Client.Friend_User
 
             return maxID + 1;
         }
-        public void Accept_Friend(App_Chat_DB context, Socket clientSocket, int frID)
-        {
-            var existingRequest = context.FriendLists
-               .FirstOrDefault(f => f.FriendshipID == frID);
-
-            existingRequest.Status = "Friend";
-
-            try
-            {
-                context.SaveChanges();
-                string noidung = "[Accept]";
-
-                // Gửi phản hồi về client cùng với địa chỉ IP
-                string traloi = $"{noidung}";
-
-                // Sử dụng clientSocket để gửi phản hồi về client
-                clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
-            }
-            catch
-            {
-                return;
-            }
-        }
-        public void Make_Friend(App_Chat_DB context, Socket clientSocket, int id1, int id2)
+        public void Gui_Friend(App_Chat_DB context, Socket clientSocket, int id1, int id2)
         {
             FriendList Make_Friend = new FriendList()
             {
@@ -52,10 +30,8 @@ namespace Server.App.Client.Friend_User
                 context.SaveChanges();
 
                 string noidung = "[Pending]";
-
                 // Gửi phản hồi về client cùng với địa chỉ IP
                 string traloi = $"{noidung}";
-
                 // Sử dụng clientSocket để gửi phản hồi về client
                 clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
             }
@@ -63,9 +39,30 @@ namespace Server.App.Client.Friend_User
             {
                 return;
             }
-
         }
-        public void Done_Friend(App_Chat_DB context, Socket clientSocket, int frID)
+
+        // hàm accept kết bạn
+        public void Accept_Friend(App_Chat_DB context, Socket clientSocket, int frID)
+        {
+            var existingRequest = context.FriendLists.FirstOrDefault(f => f.FriendshipID == frID);
+            existingRequest.Status = "Friend";
+            try
+            {
+                context.SaveChanges();
+                string noidung = "[Accept]";
+
+                // Gửi phản hồi về client cùng với địa chỉ IP
+                string traloi = $"{noidung}";
+                // Sử dụng clientSocket để gửi phản hồi về client
+                clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
+            }
+            catch
+            {
+                return;
+            }
+        }
+        
+        public void Done_Friend (Socket clientSocket)
         {
             string noidung = "[Done_Friend]";
 
@@ -76,7 +73,7 @@ namespace Server.App.Client.Friend_User
             clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
         }
         
-        public void Block_Friend(App_Chat_DB context, Socket clientSocket, int frID)
+        public void Block_Friend(Socket clientSocket)
         {
             string noidung = "[Block_Friend]";
 
@@ -94,22 +91,24 @@ namespace Server.App.Client.Friend_User
 
             if(existingRequest == null)
             {
-                Make_Friend(context, clientSocket, id1, id2);
+                Gui_Friend(context, clientSocket, id1, id2);
                 return;
             }
-            else if(existingRequest != null && existingRequest.Status == "Pending") 
+
+            if(existingRequest != null && existingRequest.Status == "Pending") 
             {
                 Accept_Friend(context, clientSocket, existingRequest.FriendshipID);
                 return;
             }
-            else if (existingRequest != null && existingRequest.Status == "Friend")
+            if (existingRequest != null && existingRequest.Status == "Friend")
             {
-                Done_Friend(context, clientSocket, existingRequest.FriendshipID);
+                Done_Friend(clientSocket);
                 return;
             }
-            else if(existingRequest != null && existingRequest.Status == "Block")
+            
+            if(existingRequest != null && existingRequest.Status == "Block")
             {
-                Block_Friend(context, clientSocket, existingRequest.FriendshipID);
+                Block_Friend(clientSocket   );
                 return;
             }
         }

@@ -3,13 +3,12 @@ using Client.App.Class_ThongTinUser;
 using Client.App.MaHoa;
 using System;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace Client
 {
     public partial class Login : Form
     {
-        #region Các hàm chức năng Login và lưu thông tin User
+        #region Hàm xử lý đăng nhập
         private void guiYeuCau_DangNhap(string username, string password) // gửi yêu cầu và thực hiện yêu cầu
         {
             // Cấu trúc [Login]$UserName$Password;
@@ -86,18 +85,11 @@ namespace Client
 
             return true;
         }
-        #endregion
-
-        #region Cấu hình của Form
-        public Login()
-        {
-            InitializeComponent();
-        }
-        private void btn_Login_Click(object sender, EventArgs e)
+        private void login()//Hàm login
         {
             string use_name = txt_Username.Text;
             string password = txt_Password.Text;
-            
+
             // Kiểm tra xem cả hai trường dữ liệu đã được nhập hay chưa
             if (kiemTraNhap(use_name, password) == false)
             {
@@ -105,11 +97,26 @@ namespace Client
             }
             guiYeuCau_DangNhap(use_name, password);
         }
-        private void btn_DangKi_Click(object sender, EventArgs e)
+        private void dangki() // hàm đăng kí
         {
             DangKy fm = new DangKy();
             fm.Show();
             this.Hide();
+        }
+        #endregion
+
+        #region Form
+        public Login()
+        {
+            InitializeComponent();
+        }
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            login();
+        }
+        private void btn_DangKi_Click(object sender, EventArgs e)
+        {
+           dangki();
         }
         #endregion
     }

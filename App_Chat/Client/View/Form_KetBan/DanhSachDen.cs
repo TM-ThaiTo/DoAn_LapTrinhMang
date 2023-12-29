@@ -1,13 +1,6 @@
 ﻿using Client.App.Class_ThongTinUser;
 using Client.App;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Client.App.MaHoa;
 
@@ -15,16 +8,13 @@ namespace Client
 {
     public partial class DanhSachDen : Form
     {
-
         #region Biến của form
         string id;
         string TenHienThi;
         #endregion
 
-
-
         #region Hàm xữ lý
-        private void XuLyKetQua(string ketQua, int title) // xử lý kết quả trả về từ server
+        private void XuLyKetQua(string ketQua) // xử lý kết quả trả về từ server
         {
             if (string.IsNullOrEmpty(ketQua))
             {
@@ -32,14 +22,9 @@ namespace Client
                 return;
             }
             // titile: 0: load danh sách --- 1: bo chan --- 2: bo chan tat ca
-            else if (!ketQua.Equals("[NULL]") && title == 0)
+            else if (!ketQua.Equals("[NULL]"))
             {
-                Fill_User(ketQua);
-                return;
-            }
-            else if (!ketQua.Equals("[NULL]") && title == 1)
-            {
-                MessageBox.Show("Đã bỏ chặn người dùng", "Thông báo");
+                Fill_KetQua(ketQua);
                 return;
             }
             else
@@ -47,16 +32,32 @@ namespace Client
                 return;
             }
         }
-        private void Fill_User(string ketQua) // fill kết quả từ server lên datagirdView
+        private void Fill_KetQua(string ketQua) // fill kết quả từ server lên datagirdView
         {
             string[] parts = ketQua.Split('$');
-            // Thêm dữ liệu từ các phần tách được vào DataTable
-            for (int i = 1; i < parts.Length; i += 2)
-            {
-                string id = parts[i];
-                string hoTen = parts[i + 1].GiaiMa();
+            string trangThai = parts[0];
 
-                dgv_DanhSachChan.Rows.Add(id, hoTen);
+            if( trangThai == "[OK_LoadListBlock]")
+            {
+                // Thêm dữ liệu từ các phần tách được vào DataTable
+                for (int i = 1; i < parts.Length; i += 2)
+                {
+                    string id = parts[i];
+                    string hoTen = parts[i + 1].GiaiMa();
+
+                    dgv_DanhSachChan.Rows.Add(id, hoTen);
+                }
+                return;
+            }
+            if(trangThai == "[Done_Un_BlockUser]")
+            {
+                MessageBox.Show("Đã bỏ chặn người dùng!");
+                return;
+            }
+            if (trangThai == "[Done_UnBlockAll]")
+            {
+                MessageBox.Show("Đã bỏ chăn tất cả người dùng!");
+                return;
             }
         }
         private void dgv_DanhSachChan_SelectionChanged(object sender, EventArgs e)
@@ -93,42 +94,67 @@ namespace Client
         }
         #endregion
 
-        #region Hàm của form
-        public DanhSachDen()
-        {
-            InitializeComponent();
-        }
-
-        private void DanhSachDen_Load(object sender, EventArgs e)
+        #region Hàm chức năng của form
+        private void Load_danhSachDen()
         {
             // [Load_User]$id
             string yeuCau = $"[Load_Block_User]${UserInfo.Instance.Id}";
             string ketQua = Result.Instance.Request(yeuCau);
-            int title = 0;
-            XuLyKetQua(ketQua, title);
+            XuLyKetQua(ketQua);
             btn_BoChan.Enabled = false;
         }
-
-        private void btn_BoChan_Click(object sender, EventArgs e)
+        private void un_Block()
         {
             if (kiemTraNhap() == false)
             {
                 return;
             }
-            // [Un_Block_User]$id1$id2
-            string yeuCau = $"[Un_Block_User]${UserInfo.Instance.Id}${id}";
-            string ketQua = Result.Instance.Request(yeuCau);
-            int title = 1;
-            XuLyKetQua(ketQua, title);
+            DialogResult result = MessageBox.Show("Bạn chắc chắn muốn chặn người dùng?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                // [Un_Block_User]$id1$id2
+                string yeuCau = $"[Un_Block_User]${UserInfo.Instance.Id}${id}";
+                string ketQua = Result.Instance.Request(yeuCau);
+                XuLyKetQua(ketQua);
+            }
+            else
+            {
+                return;
+            }
         }
+        private void un_block_all()
+        {
+            DialogResult result = MessageBox.Show("Bạn chắc chắn muốn bỏ chặn tất người dùng?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                // [Un_Block_User]$id1
+                string yeuCau = $"[Un_Block_All]${UserInfo.Instance.Id}";
+                string ketQua = Result.Instance.Request(yeuCau);
+                XuLyKetQua(ketQua);
+            }
+            else
+            {
+                return;
+            }
+        }
+        #endregion
 
+        #region Hàm của form
+        public DanhSachDen()
+        {
+            InitializeComponent();
+        }
+        private void DanhSachDen_Load(object sender, EventArgs e)
+        {
+            Load_danhSachDen();
+        }
+        private void btn_BoChan_Click(object sender, EventArgs e)
+        {
+            un_Block();
+        }
         private void btn_BoChanTatCa_Click(object sender, EventArgs e)
         {
-            // [Un_Block_User]$id1
-            string yeuCau = $"[Un_Block_All]${UserInfo.Instance.Id}";
-            string ketQua = Result.Instance.Request(yeuCau);
-            int title = 1;
-            XuLyKetQua(ketQua, title);
+            un_block_all();
         }
         #endregion
     }

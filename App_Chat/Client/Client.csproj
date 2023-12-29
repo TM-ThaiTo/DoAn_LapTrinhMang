@@ -69,6 +69,12 @@
     <Compile Include="App\Class_MaHoa\MD5.cs" />
     <Compile Include="App\Class_GuiYeuCau\Result.cs" />
     <Compile Include="App\Class_ThongTinUser\UserInfo.cs" />
+    <Compile Include="View\Form_Chat_User\FormChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Chat_User\FormChat.Designer.cs">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form_Chat_User\Chat_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\Form_Chat_User\Chat_User.resx">
       <DependentUpon>Chat_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_Chat_User\FormChat.resx">
+      <DependentUpon>FormChat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form_KetBan\DanhSachDen.resx">
       <DependentUpon>DanhSachDen.cs</DependentUpon>

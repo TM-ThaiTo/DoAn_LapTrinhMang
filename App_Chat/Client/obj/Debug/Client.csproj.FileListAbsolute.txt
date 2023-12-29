@@ -1636,3 +1636,317 @@ E:\GitHub\123\k_17\App_Chat\Client\obj\Debug\Client.csproj.CoreCompileInputs.cac
 E:\GitHub\123\k_17\App_Chat\Client\obj\Debug\Client.csproj.CopyComplete
 E:\GitHub\123\k_17\App_Chat\Client\obj\Debug\Client.exe
 E:\GitHub\123\k_17\App_Chat\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\Client.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Drawing.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Printing.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Utils.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.XtraBars.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.XtraEditors.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Drawing.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Utils.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.XtraBars.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.XtraEditors.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.Chat_User.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.DanhSachDen.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.KetBan.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.QuanLy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.DangKy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.Menu_Form.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.SendEmail.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.exe.licenses
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\Client.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.Chat_User.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.DanhSachDen.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.KetBan.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.QuanLy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.DangKy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.Menu_Form.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.SendEmail.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.exe.licenses
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\Client.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.Chat_User.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.DanhSachDen.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.KetBan.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.QuanLy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.DangKy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.Menu_Form.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.SendEmail.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.exe.licenses
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\Client.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.Chat_User.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.DanhSachDen.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.KetBan.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.QuanLy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.DangKy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.Menu_Form.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.SendEmail.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.exe.licenses
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Chat_User.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.DanhSachDen.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.KetBan.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.QuanLy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.DangKy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Menu_Form.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.SendEmail.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe.licenses
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Chat_User.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.DanhSachDen.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.KetBan.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.QuanLy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.DangKy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Menu_Form.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.SendEmail.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe.licenses
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Chat_User.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.DanhSachDen.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.KetBan.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.QuanLy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.DangKy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Menu_Form.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.SendEmail.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe.licenses
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.FormChat.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.exe.config
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.dll
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.Desktop.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Data.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Drawing.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Printing.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Utils.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraBars.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.XtraEditors.v23.1.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Chat_User.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.FormChat.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.DanhSachDen.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.KetBan.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.QuanLy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.DangKy.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Menu_Form.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Login.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.Properties.Resources.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.SendEmail.resources
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe.licenses
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CopyComplete
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe
+E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.pdb
