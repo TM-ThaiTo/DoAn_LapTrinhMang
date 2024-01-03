@@ -38,20 +38,15 @@ namespace Client
                 string soDienThoai = parts[6].GiaiMa();
                 string serverIP = parts[7].GiaiMa();
                 string address = parts.Length > 8 ? parts[8].GiaiMa() : null;
-                string age = parts[9].GiaiMa();
                 
                 // Lưu thông tin vào UserInfo
-                themThongTin_User(IDuser, username, password, name, email, soDienThoai, serverIP, address, age);
+                themThongTin_User(IDuser, username, password, name, email, soDienThoai, serverIP, address);
 
                 // Chuyển đến form Menu
                 Menu_Form fm = new Menu_Form();
                 fm.Show();
                 this.Hide();
                
-
-                /* SendEmail fm = new SendEmail();
-                 fm.Show();
-                 this.Hide();*/
             }
             else
             {
@@ -59,7 +54,7 @@ namespace Client
                 return;
             }
         }
-        private void themThongTin_User(string IDuser, string username, string password, string name, string email, string soDienThoai, string serverIP, string address, string age)
+        private void themThongTin_User(string IDuser, string username, string password, string name, string email, string soDienThoai, string serverIP, string address)
         {
             // Làm mới thông tin người dùng trước khi thêm thông tin mới
             UserInfo.Instance.ResetUserInfo();
@@ -73,7 +68,6 @@ namespace Client
             UserInfo.Instance.SoDienThoai = soDienThoai;
             UserInfo.Instance.ServerIP = serverIP;
             UserInfo.Instance.Address = address;
-            UserInfo.Instance.Age = age;
         }
         private bool kiemTraNhap(string username, string password) // kiểm tra nhập
         {

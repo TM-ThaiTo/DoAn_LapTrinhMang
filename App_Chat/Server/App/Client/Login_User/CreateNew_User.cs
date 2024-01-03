@@ -10,8 +10,6 @@ namespace Server.App.Client
 {
     public class CreateNew_User
     {
-        private DateTime dateTime;
-
         private bool kiemTraTaiKhoan(App_Chat_DB context, string new_username)
         {
             var kt = context.Users.SingleOrDefault(tk => tk.Username == new_username);
@@ -34,7 +32,7 @@ namespace Server.App.Client
         }
 
         // tạo và lưu newUser
-        public void NewUser_Client(App_Chat_DB context, Socket clientSocket, string new_username, string new_password, string fullname, string phone, string email, string address, string age)
+        public void NewUser_Client(App_Chat_DB context, Socket clientSocket, string new_username, string new_password, string fullname, string phone, string email, string address)
         {
             if(kiemTraTaiKhoan(context, new_username) == false)
             {
@@ -46,27 +44,6 @@ namespace Server.App.Client
                 clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
                 return;
             }
-            // Chuỗi ngày tháng năm
-            string dateString = age;
-
-            // Định dạng chuỗi ngày tháng năm
-            string dateFormat = "dd MM yyyy";
-            try
-            {
-                // Chuyển đổi chuỗi sang DateTime
-                dateTime = DateTime.ParseExact(dateString, dateFormat, null);
-            }
-            catch (FormatException ex)
-            {
-                Console.WriteLine($"Không thể chuyển đổi chuỗi: {ex.Message}");
-            }
-
-            /* // Tên của file ảnh trong thư mục Resources
-             string imageName = "user.png";
-
-             // Lấy đường dẫn tương đối đến thư mục Resources
-             string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", imageName);
-             byte[] byteAnh = ConvertImgToByte(imagePath);*/
 
             int ID = LayMaxID(context);
             User newUser = new User
@@ -83,25 +60,11 @@ namespace Server.App.Client
                 UserID = ID,
                 FullName = fullname,
                 Email = email,
-                DateOfBirth = dateTime,
+                //DateOfBirth = dateTime,
                 PhoneNumber = phone,
                 Address = address,
             };
 
-            /*PicUser newPic = new PicUser
-            {
-                IDanh = ID,
-                IDtt = ID,
-                Pic = byteAnh,
-            };
-            try
-            {
-                context.PicUsers.Add(newPic);
-                context.SaveChanges();
-            } catch(Exception ex)
-            {
-                MessageBox.Show("Lỗi lưu ảnh!!");
-            }*/
             try
             {
                 context.Users.Add(newUser);

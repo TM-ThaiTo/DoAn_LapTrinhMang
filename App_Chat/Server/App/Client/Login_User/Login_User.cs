@@ -27,9 +27,9 @@ namespace Server.App.Client
 
             var ttTaiKhoan = context.User_Details.SingleOrDefault(tt => tt.UserDetailID == taiKhoan.UserID);
 
-            DateTime selectedDateTime = (DateTime)ttTaiKhoan.DateOfBirth;
+            /*DateTime selectedDateTime = (DateTime)ttTaiKhoan.DateOfBirth;
             string formattedDateTime = selectedDateTime.ToString("dd MM yyyy");
-            string age = formattedDateTime;
+            string age = formattedDateTime;*/
 
             // Thêm thông tin kết nối vào danh sách
             ThongTinKetNoi thongTinKetNoi = new ThongTinKetNoi
@@ -46,8 +46,10 @@ namespace Server.App.Client
             var nguoiNhan = danhSachThongTinKetNoi.FirstOrDefault(x => x.ID == taiKhoan.UserID);
             string port_Client = nguoiNhan.Port.ToString();
             string IP_Client = nguoiNhan.IP.ToString();
+            
+            
             // Gửi phản hồi về client cùng với địa chỉ IP
-            string noidung = $"[OK]${taiKhoan.UserID}${username.MaHoa()}${password.MaHoa()}${ttTaiKhoan.FullName.MaHoa()}${ttTaiKhoan.Email.MaHoa()}${ttTaiKhoan.PhoneNumber.MaHoa()}${serverIP.MaHoa()}${IP_Client.MaHoa()}${port_Client.MaHoa()}${ttTaiKhoan.Address.MaHoa()}${age.MaHoa()}";
+            string noidung = $"[OK]${taiKhoan.UserID}${username.MaHoa()}${password.MaHoa()}${ttTaiKhoan.FullName.MaHoa()}${ttTaiKhoan.Email.MaHoa()}${ttTaiKhoan.PhoneNumber.MaHoa()}${serverIP.MaHoa()}${IP_Client.MaHoa()}${port_Client.MaHoa()}${ttTaiKhoan.Address.MaHoa()}";
             string traloi = $"{noidung}";
             clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
         }

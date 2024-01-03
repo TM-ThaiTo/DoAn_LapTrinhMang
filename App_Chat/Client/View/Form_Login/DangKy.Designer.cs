@@ -43,8 +43,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Address = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dtp_Age = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_DangKi
@@ -155,44 +153,26 @@
             // 
             // txt_Address
             // 
-            this.txt_Address.Location = new System.Drawing.Point(98, 203);
+            this.txt_Address.Location = new System.Drawing.Point(98, 168);
             this.txt_Address.Multiline = true;
             this.txt_Address.Name = "txt_Address";
-            this.txt_Address.Size = new System.Drawing.Size(247, 73);
+            this.txt_Address.Size = new System.Drawing.Size(247, 108);
             this.txt_Address.TabIndex = 16;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 206);
+            this.label7.Location = new System.Drawing.Point(10, 171);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "Địa chỉ";
-            // 
-            // dtp_Age
-            // 
-            this.dtp_Age.Location = new System.Drawing.Point(99, 173);
-            this.dtp_Age.Name = "dtp_Age";
-            this.dtp_Age.Size = new System.Drawing.Size(146, 20);
-            this.dtp_Age.TabIndex = 18;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 179);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 13);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Ngày sinh";
             // 
             // DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 317);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.dtp_Age);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_Address);
             this.Controls.Add(this.btn_DangKi);
@@ -232,7 +212,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_Address;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dtp_Age;
-        private System.Windows.Forms.Label label8;
     }
 }

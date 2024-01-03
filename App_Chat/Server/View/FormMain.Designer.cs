@@ -31,10 +31,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_StopServer = new System.Windows.Forms.Button();
             this.btn_StartServer = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_Logout = new System.Windows.Forms.Button();
-            this.btn_ClientProfile = new System.Windows.Forms.Button();
-            this.btn_ServerProfile = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txt_Port = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,17 +40,17 @@
             this.txt_TrangThai = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_Logout);
             this.groupBox2.Controls.Add(this.btn_StopServer);
             this.groupBox2.Controls.Add(this.btn_StartServer);
             this.groupBox2.Location = new System.Drawing.Point(12, 125);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(195, 135);
+            this.groupBox2.Size = new System.Drawing.Size(195, 186);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hệ thống";
@@ -78,18 +75,6 @@
             this.btn_StartServer.UseVisualStyleBackColor = true;
             this.btn_StartServer.Click += new System.EventHandler(this.btn_StartServer_Click);
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btn_Logout);
-            this.groupBox3.Controls.Add(this.btn_ClientProfile);
-            this.groupBox3.Controls.Add(this.btn_ServerProfile);
-            this.groupBox3.Location = new System.Drawing.Point(12, 266);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(195, 179);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Quản lý";
-            // 
             // btn_Logout
             // 
             this.btn_Logout.Location = new System.Drawing.Point(8, 127);
@@ -99,24 +84,6 @@
             this.btn_Logout.Text = "Logout";
             this.btn_Logout.UseVisualStyleBackColor = true;
             this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
-            // 
-            // btn_ClientProfile
-            // 
-            this.btn_ClientProfile.Location = new System.Drawing.Point(8, 73);
-            this.btn_ClientProfile.Name = "btn_ClientProfile";
-            this.btn_ClientProfile.Size = new System.Drawing.Size(181, 48);
-            this.btn_ClientProfile.TabIndex = 0;
-            this.btn_ClientProfile.Text = "Client Profile ";
-            this.btn_ClientProfile.UseVisualStyleBackColor = true;
-            // 
-            // btn_ServerProfile
-            // 
-            this.btn_ServerProfile.Location = new System.Drawing.Point(8, 19);
-            this.btn_ServerProfile.Name = "btn_ServerProfile";
-            this.btn_ServerProfile.Size = new System.Drawing.Size(181, 48);
-            this.btn_ServerProfile.TabIndex = 0;
-            this.btn_ServerProfile.Text = "Server Profile ";
-            this.btn_ServerProfile.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -188,15 +155,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(219, 450);
+            this.ClientSize = new System.Drawing.Size(217, 319);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Name = "FormMain";
             this.Text = "App_Chat Server ";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -206,9 +171,6 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_StartServer;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btn_ClientProfile;
-        private System.Windows.Forms.Button btn_ServerProfile;
         private System.Windows.Forms.Button btn_StopServer;
         private System.Windows.Forms.Button btn_Logout;
         private System.Windows.Forms.GroupBox groupBox4;

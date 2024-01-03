@@ -17,15 +17,18 @@ using Server.App.Client.Chat_User;
 using Server.App.Client.TTKetNoi_User;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using Server.App.Server_Main;
+using Server.App.Client.Chat_Group;
 
 namespace Server.App
 {
     public class Control_Server
     {
         #region Thuộc tính server
+        // server chính
         private Socket serverSocket;
-        public readonly string serverIP = "192.168.1.3";
-        public int port = 12003;
+        public readonly string serverIP = InfoServer.Instance.IPserver_Main1;
+        public int port = InfoServer.Instance.Port_Main;
 
         private App_Chat_DB context = new App_Chat_DB();
         public List<Socket> danhSachClientSockets = new List<Socket>();
@@ -33,13 +36,17 @@ namespace Server.App
         public bool isServerStart = false;
         public List<ThongTinKetNoi> danhSachThongTinKetNoi;
 
+        // server chat user
         private TcpListener server;
         private List<TcpClient> clientList;
         private Queue<string> messageQueue;
+        private int portTCP_ChatUser = InfoServer.Instance.Port_ChatUser;
 
+        // server ChatGroup
+        private int portTCP_ChatGroup = InfoServer.Instance.Port_ChatGroup;
         #endregion
 
-        #region Cấu hình server
+        #region Cấu hình server Main
         public void Start()
         {
             danhSachThongTinKetNoi = new List<ThongTinKetNoi>();
@@ -71,6 +78,7 @@ namespace Server.App
                 {
                     isServerStart = false;
                     serverSocket.Close();
+                    CloseServer();
                     MessageBox.Show("Server đã ngừng hoạt động!!");
                 }
             }
@@ -113,14 +121,14 @@ namespace Server.App
         }
         #endregion
 
-        #region TCP
+        #region TCP - Chat User - Chat Group
         private void StartServerTCP()
         {
             clientList = new List<TcpClient>();
             messageQueue = new Queue<string>();
 
             IPAddress svIP = IPAddress.Parse(serverIP);
-            server = new TcpListener(svIP, 9999);
+            server = new TcpListener(svIP, portTCP_ChatUser);
             server.Start();
 
             Thread listenThread = new Thread(ListenForClients);
@@ -229,7 +237,6 @@ namespace Server.App
             }
         }
 
-
         // hàm gửi mess
         private void Send(TcpClient client, string message)
         {
@@ -259,7 +266,6 @@ namespace Server.App
         #endregion
 
         #region Xữ lý yêu cầu
-        // hàm xữ lý yêu cầu
         private void xuLyYeuCau(Socket clientSocket, string clientIP, string noiDung)
         {
             // Tách lấy phần yêu cầu từ nội dung
@@ -268,7 +274,7 @@ namespace Server.App
             //MessageBox.Show(noiDung); // kiểm tra tí xóa
             switch (yeuCau)
             {
-                // ----------------------------------------- Login User ----------------------------
+    // ----------------------------------------- Login User ------------------------------------------------
                 // Login
                 case "[Login]": //[Login]$username$password
                     Login_User lg = new Login_User();
@@ -277,7 +283,7 @@ namespace Server.App
                     lg.Login_Client(context, clientSocket, username, password, serverIP, danhSachThongTinKetNoi);
                     break;
 
-                // ----------------------------------------- Đăng kí User --------------------------
+    // ----------------------------------------- Đăng kí User ----------------------------------------------
                 // Them User
                 case "[NewUser]": // [NewUser]$username$password$name$phone$email$address$age
                     MessageBox.Show(noiDung);
@@ -288,11 +294,10 @@ namespace Server.App
                     string soDienThoai = parts[4].GiaiMa();
                     string email = parts[5].GiaiMa();
                     string address = parts[6].GiaiMa();
-                    string age = parts[7].GiaiMa();
-                    crn.NewUser_Client(context, clientSocket, new_username, new_password, hoten, soDienThoai, email, address, age);
+                    crn.NewUser_Client(context, clientSocket, new_username, new_password, hoten, soDienThoai, email, address);
                     break;
 
-                // ----------------------------------------- Gửi OTP -------------------------------
+    // ----------------------------------------- Gửi OTP ---------------------------------------------------
                 // Gửi OTP đến mail
                 case "[SendMail_Login]": // [SendMail_Login]$email$OTP
                     SendMail sn = new SendMail();
@@ -301,7 +306,7 @@ namespace Server.App
                     sn.Send(clientSocket, mail, code);
                     break;
 
-                // ----------------------------------------- Cập nhật thông tin User ---------------
+    // ----------------------------------------- Cập nhật thông tin User -----------------------------------
                 // UpdateInfo
                 case "[UpdateInfo]": // [UpdateInfo]$id$username$password$hoten$soDienThoai$email$address$age
                     UpdateInfor_User upu = new UpdateInfor_User();
@@ -312,11 +317,10 @@ namespace Server.App
                     string soDienThoai_up = parts[5].GiaiMa();
                     string email_up = parts[6].GiaiMa();
                     string address_up = parts[7].GiaiMa();
-                    string age_up = parts[8].GiaiMa();
-                    upu.UpdateInfor(context, clientSocket, id, username_up, password_up, name, soDienThoai_up, email_up, address_up, age_up);
+                    upu.UpdateInfor(context, clientSocket, id, username_up, password_up, name, soDienThoai_up, email_up, address_up);
                     break;
 
-                // ----------------------------------------- Load User -----------------------------
+    // ----------------------------------------- Load User -------------------------------------------------
                 // Load User
                 case "[Load_User]": // [Load_User]$id
                     int id_user = int.Parse(parts[1]);
@@ -324,7 +328,7 @@ namespace Server.App
                     lu.LoadUser(context, clientSocket, id_user);
                     break;
 
-                // ------------------------------------------ Block User -----------------------------
+    // ------------------------------------------ Block User ------------------------------------------------
                 // block user
                 case "[Block_User]": //[Block_User]$id$id2
                     int id_user_Block = int.Parse(parts[1]);
@@ -355,12 +359,11 @@ namespace Server.App
                     uba.Un_Block_All(context, clientSocket, id_yeu_Cau);
                     break;
 
-                // --------------------------------------- Ket ban User ---------------------------
+    // --------------------------------------- Ket ban User --------------------------------------------------
                 // make friend
                 case "[Make_Friend]": // [Make_Friend]$id1$id2
                     int id_yc_MF = int.Parse(parts[1]);
                     int id_nyc_MF = int.Parse(parts[2]);
-
                     MakeFriend mf = new MakeFriend();
                     mf.GuiYeuCau_KetBan(context, clientSocket, id_yc_MF, id_nyc_MF);
                     break;
@@ -368,18 +371,15 @@ namespace Server.App
                 // Load Friend
                 case "[Load_Friend]": // [Load_Friend]$id
                     int id_load_fr = int.Parse(parts[1]);
-
                     LoadListFriend llf = new LoadListFriend();
                     llf.Load_List_Friend(context, clientSocket, id_load_fr);
                     break;
 
-                // ---------------------- Chat 2 User-------------------------------
-
+    // ---------------------------------------- Chat 2 User---------------------------------------------------
                 // Load tin nhắn giữa 2 User
                 case "[Load_Mess_ChatUser]": // $[Load_Mess_ChatUser]$id1$id2
                     int id_Chu = int.Parse(parts[1]);
                     int id_Ban = int.Parse(parts[2]);
-
                     Load_Mess lm = new Load_Mess();
                     lm.Load_Mess_User(context, clientSocket, id_Chu, id_Ban);
                     break;
@@ -388,16 +388,78 @@ namespace Server.App
                     int id_Gui = int.Parse(parts[1]);
                     int id_Nhan = int.Parse(parts[2]);
                     string mess = parts[3].GiaiMa();
-
                     New_Mess nm = new New_Mess();
                     nm.New_Mess_ChatUser(context, clientSocket, id_Gui, id_Nhan, mess);
                     break;
 
-                case "[Send_Mess_User]": // $[Send_Mess_User]$idGui$idNhan$mess
+    // ---------------------------------------- Chat group ----------------------------------------------------
 
+                case "[Load_Group]"://$"[Load_Group]${Id}";
+                    int id_User_Group = int.Parse(parts[1]);
+                    Class_Group.Instance.Load_Group(clientSocket, id_User_Group);
                     break;
-                // --------------------- Chat group ------------------------------
 
+                case "[New_Group]": //[New_Group]$id$nameGroup$pass
+                    int id_ChuGroup = int.Parse(parts[1]);
+                    string name_Group = parts[2].GiaiMa();
+                    string pass_Group = parts[3].GiaiMa();
+
+                    Class_Group.Instance.New_Group(clientSocket, id_ChuGroup, name_Group, pass_Group);
+                    break;
+
+                case "[Join_Group]": // [Join_Group]$id$nameGroup$pass
+                    int id_join = int.Parse(parts[1]);
+                    string name_JoinGroup = parts[2].GiaiMa();
+                    string pass_JoinGroup = parts[3].GiaiMa();
+
+                    Class_Group.Instance.Join_Group(clientSocket, id_join, name_JoinGroup, pass_JoinGroup);
+                    break;
+
+                case "[Out_Group]": //  [Out_Group]$id_user$id_group$name_Group 
+                    int id_user_outGroup = int.Parse(parts[1]);
+                    int id_group_out = int.Parse(parts[2]);
+                    string name_group_out = parts[3].GiaiMa();
+
+                    Class_Group.Instance.Out_Group(clientSocket, id_user_outGroup, id_group_out, name_group_out);
+                    break;
+
+                case "[VaiTro_Group]": //[VaiTro_Group]${id}${id_group}"
+                    int id_vaiTro_gr = int.Parse(parts[1]);
+                    int id_group = int.Parse(parts[2]);
+
+                    Class_Group.Instance.VaiTro_Group(clientSocket, id_vaiTro_gr, id_group);
+                    break;
+
+                case "[Update_Group]": //[Update_Group]${idGr}${newName}${newPass}
+                    int id_upGr = int.Parse(parts[1]);
+                    string new_NameGr = parts[2].GiaiMa();
+                    string new_Passgr = parts[3].GiaiMa();
+
+                    Class_Group.Instance.Update_Group(clientSocket, id_upGr, new_NameGr, new_Passgr);
+                    break;
+
+                case "[Del_Group]":// [Del_Group]$id_gr
+                    int id_delGr = int.Parse(parts[1]);
+
+                    Class_Group.Instance.Del_Group(clientSocket, id_delGr);
+                    break;
+
+                case "[New_Mess_Group]": //"[New_Mess_Group]$idGr$idGui$mess
+                    int id_Gr_newMess = int.Parse(parts[1]);
+                    int id_User_newMess = int.Parse(parts[2]);
+                    string mess_newMess = parts[3].GiaiMa();
+                    Class_Group.Instance.New_Mess(clientSocket, id_Gr_newMess, id_User_newMess, mess_newMess);
+                    break;
+
+                case "[Load_Mess_Group]": // [Load_Mess_Group]$idGr
+                    int id_LoadMessGr = int.Parse(parts[1]);
+                    Class_Group.Instance.Load_Mess_Group(clientSocket, id_LoadMessGr);
+                    break;
+
+                case "[Load_Member]": // [Load_Member]$idGr
+                    int id_LoadMemGr = int.Parse(parts[1]);
+                    Class_Group.Instance.Load_Member(clientSocket, id_LoadMemGr);
+                    break;
                 default:
 
                     break;

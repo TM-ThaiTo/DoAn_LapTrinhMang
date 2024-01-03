@@ -16,6 +16,9 @@ namespace Server.Models
             FriendLists1 = new HashSet<FriendList>();
             FriendRequests = new HashSet<FriendRequest>();
             FriendRequests1 = new HashSet<FriendRequest>();
+            GroupChats = new HashSet<GroupChat>();
+            GroupMembers = new HashSet<GroupMember>();
+            GroupMessages = new HashSet<GroupMessage>();
             Messages = new HashSet<Message>();
             Messages1 = new HashSet<Message>();
             User_Details = new HashSet<User_Details>();
@@ -44,6 +47,15 @@ namespace Server.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FriendRequest> FriendRequests1 { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GroupChat> GroupChats { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GroupMember> GroupMembers { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GroupMessage> GroupMessages { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Message> Messages { get; set; }

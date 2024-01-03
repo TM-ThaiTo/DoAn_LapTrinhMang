@@ -4,6 +4,8 @@ using System.Net;
 using System.Text;
 using System.Windows.Forms;
 using Client.App.Class_GuiYeuCau;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Client.App
 {
@@ -76,48 +78,63 @@ namespace Client.App
                 }
             }
         }
-        public string Request()
+
+        // hàm chuyển dữ liệu thành bit
+        public byte[] Serialize(object obj)
         {
+            MemoryStream stream = new MemoryStream();
+            BinaryFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(stream, obj);
+            return stream.ToArray();
+        }
+
+        // hàm chuyển bit thành dữ liệu
+        public object Deserialize(byte[] data)
+        {
+            MemoryStream stream = new MemoryStream(data);
+            BinaryFormatter formatter = new BinaryFormatter();
+            return formatter.Deserialize(stream);
+        }
+
+        public String Request(byte[] duLieu)
+        {
+            // Gui du lieu
+            String serverIP = "127.0.0.1";
+            int port = 12000;
+
             using (Socket sk = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
             {
                 try
                 {
-                    // Kết nối đến máy chủ
+                    // Ket noi den may chu
                     sk.Connect(IPAddress.Parse(serverIP), port);
 
-                    // Nhận phản hồi từ server
-                    byte[] buffer = new byte[102400000];
-                    int bytesRead = sk.Receive(buffer);
-                    
-                    // Chuyển mảng byte thành chuỗi
-                    string response = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    // Gui yeu cau
+                    int dem = sk.Send(duLieu);
 
-                    // Kiểm tra nếu có dữ liệu nhận được
-                    if (bytesRead > 0)
-                    {
-                        return response;
-                    }
-                    else
-                    {
-                        return response = null;
-                    }
+                    // Nhan tra loi va hien thi
+                    byte[] ketQua = new byte[10240000];
+                    int demNhan = sk.Receive(ketQua);
+                    String traLoi = Encoding.UTF8.GetString(ketQua, 0, demNhan);
+
+                    // Dong ket noi
+                    sk.Close();
+                    sk.Dispose();
+
+                    return traLoi;
                 }
-                catch (SocketException ex)
+                catch
                 {
-                    MessageBox.Show($"Không thể kết nối đến server: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return null;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Lỗi trong quá trình thực hiện yêu cầu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return null;
                 }
             }
         }
-
-        // hàm gửi dữ liệu và nhận về dữ liệu byte từ server
         public byte[] bRequest(string yeuCau, ref int demNhan)
         {
+            // Gui du lieu
+            String serverIP = "127.0.0.1";
+            int port = 12000;
+
             using (Socket sk = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
             {
                 try

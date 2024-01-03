@@ -65,6 +65,5 @@ namespace Server.App.Client.Friend_User.Block
             
             
         }
-    
     }
 }

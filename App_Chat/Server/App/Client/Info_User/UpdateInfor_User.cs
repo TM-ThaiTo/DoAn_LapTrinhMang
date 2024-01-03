@@ -9,7 +9,7 @@ namespace Server.App.Client
 {
     public class UpdateInfor_User
     {
-        public void UpdateInfor(App_Chat_DB context, Socket clientSocket, string id, string username, string password, string hoten, string soDienThoai, string email, string address, string age)
+        public void UpdateInfor(App_Chat_DB context, Socket clientSocket, string id, string username, string password, string hoten, string soDienThoai, string email, string address)
         {
             int id_user = int.Parse(id);
             var taikhoan = context.Users.SingleOrDefault(tk => tk.UserID == id_user);
@@ -21,8 +21,6 @@ namespace Server.App.Client
             ttTaiKhoan.PhoneNumber = soDienThoai;
             ttTaiKhoan.Email = email;
             ttTaiKhoan.Address = address;
-
-            ttTaiKhoan.DateOfBirth = DateTime_To_String.String_To_Date(age);
 
             // Lưu thay đổi vào cơ sở dữ liệu
             try

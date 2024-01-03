@@ -26,9 +26,6 @@ namespace Server.Models
         [StringLength(100)]
         public string Email { get; set; }
 
-        [Column(TypeName = "date")]
-        public DateTime? DateOfBirth { get; set; }
-
         [StringLength(20)]
         public string PhoneNumber { get; set; }
 

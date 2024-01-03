@@ -17,7 +17,6 @@ namespace Client
         string soDienThoai_form;
         string email_form;
         string address_form;
-        string age_form;
 
         string duongDanAnh;
         string duongDanBit;
@@ -33,10 +32,6 @@ namespace Client
             txt_Password.Text = UserInfo.Instance.Password;
             txt_SoDienThoai.Text = UserInfo.Instance.SoDienThoai;
             txt_Email.Text = UserInfo.Instance.Email;
-
-            // Chuỗi ngày tháng năm
-            string dateString = UserInfo.Instance.Age;
-            dtp_Age.Value = DateTime_String.String_To_Date(dateString);
 
             string userAddress = UserInfo.Instance.Address;
             txt_Address.Text = userAddress ?? string.Empty;
@@ -94,14 +89,6 @@ namespace Client
                 return false;
             }
 
-            // Lấy ngày tháng năm hiện tại
-            DateTime currentDate = DateTime.Now;
-            DateTime ngaySinh = dtp_Age.Value.Date;
-            if (ngaySinh > currentDate)
-            {
-                MessageBox.Show("Vui lòng nhập ngày sinh phải nhỏ hơn ngày hiện tại!!", "Thông báo", MessageBoxButtons.OK);
-                return false;
-            }
             return true;
         }
         private void dienThongTinForm()
@@ -111,7 +98,6 @@ namespace Client
             soDienThoai_form = txt_SoDienThoai.Text;
             email_form = txt_Email.Text;
             address_form = txt_Address.Text;
-            age_form = DateTime_String.Date_To_String(dtp_Age.Value);
         }
         private void AddImage() // hàm chọn ảnh và thêm ảnh
         {
@@ -161,12 +147,9 @@ namespace Client
             string soDienThoai = soDienThoai_form;
             string email = email_form;
             string address = address_form;
-            string age = age_form;
 
-            MessageBox.Show(age);
-            //string anh = (string)(pic_User);
             // [UpdateInfo]$id$username$password$hoten$soDienThoai$email$address$age
-            string yeuCau = $"[UpdateInfo]${id.MaHoa()}${username.MaHoa()}${password.MaHoa()}${name.MaHoa()}${soDienThoai.MaHoa()}${email.MaHoa()}${address.MaHoa()}${age.MaHoa()}";
+            string yeuCau = $"[UpdateInfo]${id.MaHoa()}${username.MaHoa()}${password.MaHoa()}${name.MaHoa()}${soDienThoai.MaHoa()}${email.MaHoa()}${address.MaHoa()}";
 
             // Gửi yêu cầu và nhận kết quả từ server
             string ketQua = Result.Instance.Request(yeuCau); // [OK]
@@ -198,7 +181,6 @@ namespace Client
             UserInfo.Instance.Email = email_form;
             UserInfo.Instance.SoDienThoai = soDienThoai_form;
             UserInfo.Instance.Address = address_form;
-            UserInfo.Instance.Age = age_form;
         }
         #endregion
 

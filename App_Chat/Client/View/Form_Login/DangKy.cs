@@ -34,7 +34,6 @@ namespace Client
                 address_newUser = "NULL";
             }
 
-            age_newUser = DateTime_String.Date_To_String(dtp_Age.Value);
 
         }
         private bool kiemTraNhap()
@@ -56,21 +55,12 @@ namespace Client
                 return false;
             }
 
-            // Lấy ngày tháng năm hiện tại
-            DateTime currentDate = DateTime.Now;
-            DateTime ngaySinh = dtp_Age.Value.Date;
-            if (ngaySinh > currentDate)
-            {
-                MessageBox.Show("Vui lòng nhập ngày sinh phải nhỏ hơn ngày hiện tại!!", "Thông báo", MessageBoxButtons.OK);
-                return false;
-            }
-
             return true;
         }
         private void guiYeuCau()
         {
             // cấu trúc [NewUser]$username$password$name$phone$email$address$age
-            string yeuCau = $"[NewUser]${usename_newUser.MaHoa()}${cfpPassword_newUser.MaHoa()}${name_newUser.MaHoa()}${soDienThoai_newUser.MaHoa()}${email_newUser.MaHoa()}${address_newUser.MaHoa()}${age_newUser.MaHoa()}";
+            string yeuCau = $"[NewUser]${usename_newUser.MaHoa()}${cfpPassword_newUser.MaHoa()}${name_newUser.MaHoa()}${soDienThoai_newUser.MaHoa()}${email_newUser.MaHoa()}${address_newUser.MaHoa()}";
             string ketQua = Result.Instance.Request(yeuCau);
 
             if (string.IsNullOrEmpty(ketQua))
@@ -96,7 +86,6 @@ namespace Client
             {
                 guiYeuCau();
             }
-
         }
         #endregion
 

@@ -945,8 +945,6 @@ E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\DevExpress.Xpo.v23.1.xml
 E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.xml
 E:\1\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.SqlServer.xml
 E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.AssemblyReference.cache
-E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.ClientProfile.resources
-E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.AdminProfile.resources
 E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.FormMain.resources
 E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.Login.resources
 E:\1\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.Properties.Resources.resources

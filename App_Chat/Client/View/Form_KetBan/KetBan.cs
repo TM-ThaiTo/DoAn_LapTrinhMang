@@ -18,7 +18,6 @@ namespace Client
         {
             if (string.IsNullOrEmpty(ketQua))
             {
-                //MessageBox.Show("Máy chủ không phản hồi", "Lỗi", MessageBoxButtons.OK);
                 return;
             }
             else if (!ketQua.Equals("[NULL]"))
@@ -106,7 +105,7 @@ namespace Client
         }
         #endregion
 
-        #region Hàm của form
+        #region Hàm gửi đến server
         private void bketBan()
         {
             if (kiemTraThongTin() == false)

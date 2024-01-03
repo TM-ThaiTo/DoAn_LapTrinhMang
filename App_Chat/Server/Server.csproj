@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\Client\Chat_Group\Class_Group.cs" />
     <Compile Include="App\Client\Chat_User\BangTam_LuuThongTinChat.cs" />
     <Compile Include="App\Client\Chat_User\Load_Mess.cs" />
     <Compile Include="App\Client\Chat_User\New_Mess.cs" />
@@ -70,23 +71,24 @@
     <Compile Include="App\Client\TTKetNoi_User\ThongTinKetNoi.cs" />
     <Compile Include="App\MaHoa\DateTime_To_String.cs" />
     <Compile Include="App\MaHoa\PicToByte.cs" />
-    <Compile Include="View\ClientProfile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\ClientProfile.Designer.cs">
-      <DependentUpon>ClientProfile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\AdminProfile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\AdminProfile.Designer.cs">
-      <DependentUpon>AdminProfile.cs</DependentUpon>
-    </Compile>
+    <Compile Include="App\Server_Main\InfoServer.cs" />
     <Compile Include="App\Client\Login_User\Login_User.cs" />
     <Compile Include="App\Client\Login_User\CreateNew_User.cs" />
     <Compile Include="App\MaHoa\MD5.cs" />
     <Compile Include="App\Server_Main\Control_Server.cs" />
     <Compile Include="App\Client\Login_User\SendMail.cs" />
+    <Compile Include="Models\App_Chat_DB.cs" />
+    <Compile Include="Models\Chat_Infor.cs" />
+    <Compile Include="Models\FriendList.cs" />
+    <Compile Include="Models\FriendRequest.cs" />
+    <Compile Include="Models\GroupChat.cs" />
+    <Compile Include="Models\GroupMember.cs" />
+    <Compile Include="Models\GroupMessage.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\User_Avatar.cs" />
+    <Compile Include="Models\User_Details.cs" />
     <Compile Include="View\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,23 +101,8 @@
     <Compile Include="View\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\App_Chat_DB.cs" />
-    <Compile Include="Models\Chat_Infor.cs" />
-    <Compile Include="Models\FriendList.cs" />
-    <Compile Include="Models\FriendRequest.cs" />
-    <Compile Include="Models\Message.cs" />
-    <Compile Include="Models\sysdiagram.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Models\User_Avatar.cs" />
-    <Compile Include="Models\User_Details.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="View\ClientProfile.resx">
-      <DependentUpon>ClientProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\AdminProfile.resx">
-      <DependentUpon>AdminProfile.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>

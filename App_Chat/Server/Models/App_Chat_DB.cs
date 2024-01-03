@@ -15,6 +15,9 @@ namespace Server.Models
         public virtual DbSet<Chat_Infor> Chat_Infor { get; set; }
         public virtual DbSet<FriendList> FriendLists { get; set; }
         public virtual DbSet<FriendRequest> FriendRequests { get; set; }
+        public virtual DbSet<GroupChat> GroupChats { get; set; }
+        public virtual DbSet<GroupMember> GroupMembers { get; set; }
+        public virtual DbSet<GroupMessage> GroupMessages { get; set; }
         public virtual DbSet<Message> Messages { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
@@ -26,6 +29,16 @@ namespace Server.Models
             modelBuilder.Entity<Chat_Infor>()
                 .Property(e => e.IP)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<GroupChat>()
+                .HasMany(e => e.GroupMembers)
+                .WithRequired(e => e.GroupChat)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<GroupChat>()
+                .HasMany(e => e.GroupMessages)
+                .WithRequired(e => e.GroupChat)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<User>()
                 .HasMany(e => e.FriendLists)
@@ -46,6 +59,22 @@ namespace Server.Models
                 .HasMany(e => e.FriendRequests1)
                 .WithOptional(e => e.User1)
                 .HasForeignKey(e => e.SenderID);
+
+            modelBuilder.Entity<User>()
+                .HasMany(e => e.GroupChats)
+                .WithRequired(e => e.User)
+                .HasForeignKey(e => e.OwnerID)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<User>()
+                .HasMany(e => e.GroupMembers)
+                .WithRequired(e => e.User)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<User>()
+                .HasMany(e => e.GroupMessages)
+                .WithRequired(e => e.User)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<User>()
                 .HasMany(e => e.Messages)

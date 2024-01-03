@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Server.App.Server_Main;
+using System;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -6,7 +7,7 @@ namespace Server.App.MaHoa
 {
     static class MD5
     {
-        static string matkhau = "1h87h8712j";
+        static string matkhau = InfoServer.Instance.Matkhau_MD5;
         public static string MaHoa(this string duLieuCanMaHoa)
         {
             byte[] input = Encoding.UTF8.GetBytes(duLieuCanMaHoa);

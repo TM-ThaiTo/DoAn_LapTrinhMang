@@ -61,25 +61,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\Class_Chat\Result_Chat_User.cs" />
-    <Compile Include="App\Class_Chat\Server_Chat_User.cs" />
+    <Compile Include="App\Class_Chat\Chat_Result.cs" />
     <Compile Include="App\Class_GuiYeuCau\InfoServer.cs" />
     <Compile Include="App\Class_MaHoa\DateTime_String.cs" />
     <Compile Include="App\Class_MaHoa\PicToByte.cs" />
     <Compile Include="App\Class_MaHoa\MD5.cs" />
     <Compile Include="App\Class_GuiYeuCau\Result.cs" />
     <Compile Include="App\Class_ThongTinUser\UserInfo.cs" />
+    <Compile Include="View\Form_Chat_Group\Form_Chat_Group_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Chat_Group\Form_Chat_Group_Main.Designer.cs">
+      <DependentUpon>Form_Chat_Group_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Chat_Group\Form_Chat_Group_Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Chat_Group\Form_Chat_Group_Member.Designer.cs">
+      <DependentUpon>Form_Chat_Group_Member.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form_Chat_User\FormChat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Form_Chat_User\FormChat.Designer.cs">
       <DependentUpon>FormChat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Form_Chat_User\Chat_User.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Form_Chat_User\Chat_User.Designer.cs">
-      <DependentUpon>Chat_User.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Form_KetBan\DanhSachDen.cs">
       <SubType>Form</SubType>
@@ -125,8 +130,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="View\Form_Chat_User\Chat_User.resx">
-      <DependentUpon>Chat_User.cs</DependentUpon>
+    <EmbeddedResource Include="View\Form_Chat_Group\Form_Chat_Group_Main.resx">
+      <DependentUpon>Form_Chat_Group_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_Chat_Group\Form_Chat_Group_Member.resx">
+      <DependentUpon>Form_Chat_Group_Member.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form_Chat_User\FormChat.resx">
       <DependentUpon>FormChat.cs</DependentUpon>
@@ -200,5 +208,6 @@
   <ItemGroup>
     <None Include="Resources\block-user.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

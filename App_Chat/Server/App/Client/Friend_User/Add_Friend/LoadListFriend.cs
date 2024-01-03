@@ -53,6 +53,5 @@ namespace Server.App.Client
             // Sử dụng clientSocket để gửi phản hồi về client
             clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
         }
-
     }
 }

@@ -46,8 +46,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_Address = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dtp_Age = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Avata)).BeginInit();
             this.SuspendLayout();
@@ -206,30 +204,12 @@
             this.txt_Address.Size = new System.Drawing.Size(141, 101);
             this.txt_Address.TabIndex = 6;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(187, 145);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Ngày sinh";
-            // 
-            // dtp_Age
-            // 
-            this.dtp_Age.Location = new System.Drawing.Point(259, 142);
-            this.dtp_Age.Name = "dtp_Age";
-            this.dtp_Age.Size = new System.Drawing.Size(141, 20);
-            this.dtp_Age.TabIndex = 7;
-            // 
             // QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 354);
-            this.Controls.Add(this.dtp_Age);
+            this.ClientSize = new System.Drawing.Size(483, 338);
             this.Controls.Add(this.txt_Address);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_SuaThongTin);
@@ -276,7 +256,5 @@
         private System.Windows.Forms.PictureBox pic_Avata;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_Address;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dtp_Age;
     }
 }

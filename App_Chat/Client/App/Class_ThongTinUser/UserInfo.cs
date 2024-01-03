@@ -35,7 +35,6 @@
         private string soDienThoai;
         private string serverIP;
         private string address;
-        private string age;
         private byte[] pic;
 
 
@@ -49,6 +48,5 @@
         public string ServerIP { get => serverIP; set => serverIP = value; }
         public byte[] Pic { get => pic; set => pic = value; }
         public string Address { get => address; set => address = value; }
-        public string Age { get => age; set => age = value; }
     }
 }

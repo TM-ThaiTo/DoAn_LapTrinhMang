@@ -1660,7 +1660,6 @@ E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Pdf.v23.1.Core.xml
 E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Pdf.v23.1.Drawing.xml
 E:\1\DoAn_LapTrinhMang\App_Chat\Client\bin\Debug\DevExpress.Sparkline.v23.1.Core.xml
 E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.csproj.AssemblyReference.cache
-E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.Chat_User.resources
 E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.DanhSachDen.resources
 E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.KetBan.resources
 E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.QuanLy.resources
@@ -1950,3 +1949,6 @@ E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy
 E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.csproj.CopyComplete
 E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.exe
 E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Client\obj\Debug\Client.pdb
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.FormChat.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.Form_Chat_Group_Main.resources
+E:\1\DoAn_LapTrinhMang\App_Chat\Client\obj\Debug\Client.Form_Chat_Group_Member.resources

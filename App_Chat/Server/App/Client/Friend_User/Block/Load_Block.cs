@@ -44,6 +44,5 @@ namespace Server.App.Client.Friend_User.Block
             // Sử dụng clientSocket để gửi phản hồi về client
             clientSocket.Send(Encoding.UTF8.GetBytes(traloi));
         }
-
     }
 }
