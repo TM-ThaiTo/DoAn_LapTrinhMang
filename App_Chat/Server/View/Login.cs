@@ -32,5 +32,10 @@ namespace Server
                 MessageBox.Show("Đăng nhập thất bại!!!", "Lỗi", MessageBoxButtons.OK);
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

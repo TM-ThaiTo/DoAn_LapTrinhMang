@@ -36,18 +36,20 @@
     <StartupObject>Client.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.Desktop.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Drawing.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v23.1.Core, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v23.1, Version=23.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.10.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,7 +63,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\Class_Chat\Chat_Result.cs" />
     <Compile Include="App\Class_GuiYeuCau\InfoServer.cs" />
     <Compile Include="App\Class_MaHoa\DateTime_String.cs" />
     <Compile Include="App\Class_MaHoa\PicToByte.cs" />
@@ -171,6 +172,7 @@
     <EmbeddedResource Include="View\Form_Login\SendEmail.resx">
       <DependentUpon>SendEmail.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -185,22 +187,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\VS_Load.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Logo_Caro.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\O.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\X.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\VS_main.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\friend.png" />
@@ -208,6 +198,35 @@
   <ItemGroup>
     <None Include="Resources\block-user.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-48light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App\Class_Chat\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

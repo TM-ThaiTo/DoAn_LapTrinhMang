@@ -1107,3 +1107,19 @@ E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy
 E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.csproj.CopyComplete
 E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.exe
 E:\1\DoAn_LapTrinhMang\App_Chat - Copy - Copy - Copy - Copy - Copy - Copy - Copy\Server\obj\Debug\Server.pdb
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\Server.exe.config
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\Server.exe
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\Server.pdb
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.dll
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.SqlServer.dll
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.xml
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\bin\Debug\EntityFramework.SqlServer.xml
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.FormMain.resources
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.Login.resources
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.Properties.Resources.resources
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.csproj.CopyComplete
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.exe
+E:\2\DoAn_LapTrinhMang\App_Chat\Server\obj\Debug\Server.pdb

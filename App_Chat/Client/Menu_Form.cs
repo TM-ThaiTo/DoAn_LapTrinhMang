@@ -1,10 +1,8 @@
 ﻿using Client.App;
 using Client.App.Class_ThongTinUser;
 using Client.App.MaHoa;
-using DevExpress.XtraBars.Docking2010.Views.WindowsUI;
 using System;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Client
@@ -268,7 +266,7 @@ namespace Client
             guiYeuCau(0);
             guiYeuCau(1);
         }
-        private void dgv_DanhSachBanBe_SelectionChanged(object sender, EventArgs e)
+        private void dgv_DanhSachBanBe_SelectionChanged_1(object sender, EventArgs e)
         {
             // Kiểm tra xem có hàng nào được chọn hay không
             if (dgv_DanhSachBanBe.SelectedRows.Count > 0)
@@ -284,7 +282,7 @@ namespace Client
                 return;
             }
         }
-        private void dgv_DanhSachNhom_SelectionChanged(object sender, EventArgs e)
+        private void dgv_DanhSachNhom_SelectionChanged_1(object sender, EventArgs e)
         {
             // Kiểm tra xem có hàng nào được chọn hay không
             if (dgv_DanhSachNhom.SelectedRows.Count > 0)
@@ -316,44 +314,65 @@ namespace Client
         {
             LamMoi();
         }
-        private void btn_QuanLy_Click(object sender, EventArgs e)
-        {
-            QuanLy fm = new QuanLy();
-            fm.Show();
-        }
-        private void btn_KetBan_Click(object sender, EventArgs e)
-        {
-            KetBan frm = new KetBan();
-            frm.Show();
-        }
-        private void btn_DanhSachDen_Click(object sender, EventArgs e)
-        {
-            DanhSachDen frm = new DanhSachDen();
-            frm.Show();
-        }
-        private void btn_LamMoi_Click(object sender, EventArgs e)
+        private void pic_LamMoi_Click(object sender, EventArgs e)
         {
             LamMoi();
-        }
-        private void btn_DangXuat_Click(object sender, EventArgs e)
-        {
-            // Hiển thị hộp thoại xác nhận với người dùng
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                this.Hide();
-                Login fm = new Login();
-                fm.Show();
-            }
-            
         }
         private void Menu_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
             close_Form();
         }
-        // chức năng của chat user
-        private void btn_Chat_Click(object sender, EventArgs e)
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void Minimize_Click(object sender, EventArgs e)
+        {
+            Minimize.Click += delegate {
+                // Thu nhỏ form.
+                this.WindowState = FormWindowState.Minimized;
+            };
+        }
+        private void Zoom_Click(object sender, EventArgs e)
+        {
+            Zoom.Click += delegate {
+                // Kiểm tra trạng thái hiện tại của form.
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    // Thu nhỏ form.
+                    this.WindowState = FormWindowState.Normal;
+                }
+                else
+                {
+                    // Phóng to form.
+                    this.WindowState = FormWindowState.Maximized;
+                }
+            };
+        }
+        private void chk_AnHienPass_MatKhau_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chk_AnHienPass_MatKhau.Checked)
+            {
+                txt_Pass.PasswordChar = '\0';
+            }
+            else
+            {
+                txt_Pass.PasswordChar = '●';
+            }
+        }
+        
+        // chức năng của User
+        private void btn_KetBan_Click_1(object sender, EventArgs e)
+        {
+            KetBan frm = new KetBan();
+            frm.Show();
+        }
+        private void btn_DanhSachDen_Click_1(object sender, EventArgs e)
+        {
+            DanhSachDen frm = new DanhSachDen();
+            frm.Show();
+        }
+        private void btn_Chat_Click_1(object sender, EventArgs e)
         {
             /*Chat_User cu = new Chat_User(id_BanBe, HoTen_BanBe);
             cu.Show();*/
@@ -367,22 +386,40 @@ namespace Client
                 MessageBox.Show("Vui lòng chọn bạn bè để chat!!", "Thông báo", MessageBoxButtons.OK);
             }
         }
+        private void btn_QuanLy_Click_1(object sender, EventArgs e)
+        {
+            QuanLy fm = new QuanLy();
+            fm.Show();
+        }
+        private void btn_DangXuat_Click_1(object sender, EventArgs e)
+        {
+            // Hiển thị hộp thoại xác nhận với người dùng
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Login fm = new Login();
+                fm.Show();
+            }
+        }
+
         // các chức năng của group chat
-        private void btn_Tao_Click(object sender, EventArgs e)
+        private void btn_Tao_Click_1(object sender, EventArgs e)
         {
             guiYeuCau(2);
         }
-        private void btn_GiaNhapNhom_Click(object sender, EventArgs e)
+        private void btn_GiaNhapNhom_Click_1(object sender, EventArgs e)
         {
             guiYeuCau(3);
         }
-        private void btn_RoiNhom_Click(object sender, EventArgs e)
-        {
-            guiYeuCau(4);
-        }
-        private void btn_ThamGiaChat_Click(object sender, EventArgs e)
+        private void btn_ThamGiaChat_Click_1(object sender, EventArgs e)
         {
             guiYeuCau(5);
+        }
+        private void btn_RoiNhom_Click_1(object sender, EventArgs e)
+        {
+            guiYeuCau(4);
         }
         #endregion
     }

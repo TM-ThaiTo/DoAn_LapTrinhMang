@@ -2,7 +2,6 @@
 using Client.App;
 using System;
 using System.Windows.Forms;
-using Client.App.Class_MaHoa;
 
 namespace Client
 {
@@ -28,13 +27,12 @@ namespace Client
             cfpPassword_newUser = txt_ConfimPassword.Text;
             soDienThoai_newUser = txt_SoDienThoai.Text;
             email_newUser = txt_Email.Text;
+            address_newUser = txt_Address.Text;
 
-            if (!string.IsNullOrEmpty(email_newUser))
+            if (!string.IsNullOrEmpty(address_newUser))
             {
                 address_newUser = "NULL";
             }
-
-
         }
         private bool kiemTraNhap()
         {
@@ -71,7 +69,7 @@ namespace Client
             {
                 MessageBox.Show("Đăng kí thành công!!");
                 Login fm = new Login();
-                fm.ShowDialog();
+                fm.Show();
                 this.Hide();
             }
             else
@@ -94,9 +92,64 @@ namespace Client
         {
             InitializeComponent();
         }
-        private void btn_DangKi_Click(object sender, EventArgs e)
+        private void btn_DangKy_Click(object sender, EventArgs e)
         {
             dangKi();
+        }
+        private void chk_AnHienPass_MatKhau_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chk_AnHienPass_MatKhau.Checked)
+            {
+                txt_Password.PasswordChar = '\0';
+            }
+            else
+            {
+                txt_Password.PasswordChar = '●';
+            }
+        }
+        private void chk_AnHienPass_XacNhanMatKhau_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chk_AnHienPass_XacNhanMatKhau.Checked)
+            {
+                txt_ConfimPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txt_ConfimPassword.PasswordChar = '●';
+            }
+        }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Login fm = new Login();
+            this.Close();
+            fm.Show();
+        }
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void Minimize_Click(object sender, EventArgs e)
+        {
+            Minimize.Click += delegate {
+                // Thu nhỏ form.
+                this.WindowState = FormWindowState.Minimized;
+            };
+        }
+        private void Zoom_Click(object sender, EventArgs e)
+        {
+            Zoom.Click += delegate {
+                // Kiểm tra trạng thái hiện tại của form.
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    // Thu nhỏ form.
+                    this.WindowState = FormWindowState.Normal;
+                }
+                else
+                {
+                    // Phóng to form.
+                    this.WindowState = FormWindowState.Maximized;
+                }
+            };
         }
         #endregion
     }

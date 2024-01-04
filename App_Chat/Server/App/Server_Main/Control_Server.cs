@@ -286,7 +286,6 @@ namespace Server.App
     // ----------------------------------------- Đăng kí User ----------------------------------------------
                 // Them User
                 case "[NewUser]": // [NewUser]$username$password$name$phone$email$address$age
-                    MessageBox.Show(noiDung);
                     CreateNew_User crn = new CreateNew_User();
                     string new_username = parts[1].GiaiMa();
                     string new_password = parts[2].GiaiMa();
